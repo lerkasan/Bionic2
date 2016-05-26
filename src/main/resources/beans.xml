@@ -10,6 +10,6 @@
 </bean>
 <bean id="helloKittyService" class="com.bionic.edu.HelloKittyService" />
 <bean name="application" class="com.bionic.edu.Application">
-         <constructor-arg ref="helloWorldService" />
+         <property name="greeting" ref="helloWorldService" />
 </bean> 
  </beans>
